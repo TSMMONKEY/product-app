@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Pages\ShopController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.home');
 });
+Route::get('/about', function () {
+    return view('pages.about');
+});
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+
+Route::get('/shop',[ShopController::class, 'index']);
+
+Route::get('/product/{name}/{id}',[ShopController::class, 'show'])->name('single.product');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
