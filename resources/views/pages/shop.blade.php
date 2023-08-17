@@ -76,13 +76,15 @@
                         @foreach ($allProduct as $item)
                             <div class="col-md-4">
                                 <div class="card mb-4 product-wap rounded-0">
-                                    <div class="card rounded-0">
+                                    <a href="{{Route('single.product', ['name' => $item['name'], 'id' => $item['id']])}}" class="card rounded-0">
                                         <img class="card-img rounded-0 img-fluid" src="https://{{$item['imageUrl']}}">
                                         <div
                                             class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                         </div>
-                                    </div>
-                                    <div class="card-body" style="height: 160px;">
+                                    </a>
+                                    <div class="card-body" style="height: 175px; text-align:center">
+                                        <a style="font-weight: 700 !important; font-size:18px !important" href="{{Route('single.product', ['name' => $item['name'], 'id' => $item['id']])}}" class="h3 text-decoration-none">{{$item['brandName']}}</a>
+                                        <br>
                                         <a href="{{Route('single.product', ['name' => $item['name'], 'id' => $item['id']])}}" class="h3 text-decoration-none">{{$item['name']}}</a>
                                         <p class="text-center mb-0">{{$item['price']['current']['text']}}</p>
                                         <ul class="w-100 list-unstyled d-flex justify-content-around mb-0">

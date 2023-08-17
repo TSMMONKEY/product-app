@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Pages\ShopController;
+use App\Http\Controllers\DashController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,17 +16,19 @@ use App\Http\Controllers\Pages\ShopController;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/', [DashController::class, 'index']);
+
 Route::get('/about', function () {
     return view('pages.about');
 });
+
 Route::get('/contact', function () {
     return view('pages.contact');
 });
 
 Route::get('/shop',[ShopController::class, 'index']);
+
+Route::get('/search',[DashController::class, 'show'])->name('search.query');
 
 Route::get('/product/{name}/{id}',[ShopController::class, 'show'])->name('single.product');
 

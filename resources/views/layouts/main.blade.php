@@ -71,7 +71,7 @@ https://templatemo.com/tm-559-zay-shop
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
                 id="templatemo_main_nav">
                 <div class="flex-fill">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto" style=" width: 130px; margin: 0 auto; text-align: center;">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto" style=" width: 130px; margin: 0 auto; text-align: center;" id="nav-drop">
                         <li class="nav-item">
                             <a class="nav-link" href="/">Home</a>
                         </li>
@@ -84,13 +84,11 @@ https://templatemo.com/tm-559-zay-shop
                         <li class="nav-item">
                             <a class="nav-link" href="/contact">Contact</a>
                         </li>
-                        <li class="nav-item d-flex" style="justify-content: space-between; width: 130px;">
+                        <li class="nav-item d-flex" style="justify-content: space-between; width: 130px;" id="log_in">
                             @auth
-                                <a class="nav-link" href="/">Home</a>
-                                <a class="nav-link" href="/">Log Out</a>
                             @else
-                                <a class="nav-link" href="/">Log in</a>
-                                <a class="nav-link" href="/">Sign Up</a>
+                                <a class="nav-link" href="/login">Log in</a>
+                                <a class="nav-link" href="/register">Sign Up</a>
                             @endauth
 
 
@@ -99,12 +97,14 @@ https://templatemo.com/tm-559-zay-shop
                 </div>
                 <div class="navbar align-self-center d-flex">
                     <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                            <div class="input-group-text">
+                        <form action="{{route('search.query')}}" method="GET" class="input-group">
+                            @csrf
+
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ..." name="search">
+                            <button type="submit" class="input-group-text">
                                 <i class="fa fa-fw fa-search"></i>
-                            </div>
-                        </div>
+                            </button>
+                        </form>
                     </div>
                     <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal"
                         data-bs-target="#templatemo_search">

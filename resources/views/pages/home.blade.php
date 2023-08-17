@@ -17,8 +17,8 @@
             <div class="carousel-item active">
                 <div class="container">
                     <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="/assets/img/banner_img_01.jpg" alt="">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last" style="margin: 0 0 85px 0;">
+                            <img class="img-fluid" src="/assets/img/hero_section_1.svg" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
@@ -40,7 +40,7 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="/assets/img/banner_img_02.jpg" alt="">
+                            <img class="img-fluid" src="/assets/img/hero_section_2.svg" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
@@ -58,8 +58,8 @@
             <div class="carousel-item">
                 <div class="container">
                     <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="/assets/img/banner_img_03.jpg" alt="">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last mb-6" style="margin: 0 0 85px 0;">
+                            <img class="img-fluid" src="/assets/img/hero_section_3.svg" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
@@ -98,19 +98,19 @@
         </div>
         <div class="row">
             <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="/assets/img/category_img_01.jpg" class="rounded-circle img-fluid border"></a>
-                <h5 class="text-center mt-3 mb-3">Watches</h5>
-                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+                <a href="#"><img src="/assets/img/shirts.png" class="rounded-circle img-fluid border" style="width: 800px; height: 150px;"></a>
+                <h5 class="text-center mt-3 mb-3">Shirts</h5>
+                <p class="text-center"><a class="btn btn-success">Shop Shirts</a></p>
             </div>
             <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="/assets/img/category_img_02.jpg" class="rounded-circle img-fluid border"></a>
+                <a href="#"><img src="/assets/img/category_img_02.jpg" class="rounded-circle img-fluid border"  style="width: 800px; height: 150px;"></a>
                 <h2 class="h5 text-center mt-3 mb-3">Shoes</h2>
-                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+                <p class="text-center"><a class="btn btn-success">Shop Shoes</a></p>
             </div>
             <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="/assets/img/category_img_03.jpg" class="rounded-circle img-fluid border"></a>
-                <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+                <a href="#"><img src="/assets/img/jeans.png" class="rounded-circle img-fluid border" style="width: 800px; height: 150px;"></a>
+                <h2 class="h5 text-center mt-3 mb-3">Jeans</h2>
+                <p class="text-center"><a class="btn btn-success">Shop Jeans</a></p>
             </div>
         </div>
     </section>
